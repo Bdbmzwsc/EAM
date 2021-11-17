@@ -1,1 +1,1 @@
-my new file contents
+This information comes from a request sent by Tester, which is an update file
