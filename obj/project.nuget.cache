@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "F84h6Xqvly9SHzfLCWHRuHl84CUgAlUWhEu4/hqLrqLhRWoGlL/6v85Htf0Glj8+bbEAc5B59aEyBJt+uTh8YA==",
+  "success": true,
+  "projectFilePath": "F:\\EH官网\\EAM\\EAM.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\materialdesigncolors\\2.0.4-ci82\\materialdesigncolors.2.0.4-ci82.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\materialdesignthemes\\4.3.0-ci82\\materialdesignthemes.4.3.0-ci82.nupkg.sha512"
+  ],
+  "logs": []
+}
