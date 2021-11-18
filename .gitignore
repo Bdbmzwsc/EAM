@@ -10,3 +10,4 @@ tmp/nanoc/
 crash.log
 .vs/
 bin/
+Config.cs
