@@ -33,7 +33,22 @@ namespace EAM.API
             {
                 return "Error:" + ex.Message;
             }
-           
+        }
+        public static string Download_file(string url, string path)//Download File
+        {
+            try
+            {
+                using (var client = new WebClient())
+                {
+                    client.DownloadFile(url, path);//下载文件
+                    return path;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
     }
 }

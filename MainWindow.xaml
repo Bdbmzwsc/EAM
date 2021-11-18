@@ -6,10 +6,5 @@
         xmlns:local="clr-namespace:EAM"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Download" HorizontalAlignment="Left" Height="60" Margin="163,171,0,0" VerticalAlignment="Top" Width="128" Click="Button_Click"/>
-        <TextBox x:Name="URL" HorizontalAlignment="Left" Height="23" Margin="163,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="441"/>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="163,94,0,0" Text="URL" TextWrapping="Wrap" VerticalAlignment="Top" Width="57"/>
-
-    </Grid>
+    <Grid/>
 </Window>
