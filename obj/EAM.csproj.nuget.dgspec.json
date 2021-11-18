@@ -50,6 +50,10 @@
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[4.3.0-ci82, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

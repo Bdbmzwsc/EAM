@@ -11,3 +11,4 @@ crash.log
 .vs/
 bin/
 Config.cs
+ED.cs

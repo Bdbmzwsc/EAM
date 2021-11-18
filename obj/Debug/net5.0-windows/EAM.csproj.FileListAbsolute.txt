@@ -24,3 +24,4 @@ F:\EH官网\EAM\obj\Debug\net5.0-windows\EAM.dll
 F:\EH官网\EAM\obj\Debug\net5.0-windows\ref\EAM.dll
 F:\EH官网\EAM\obj\Debug\net5.0-windows\EAM.pdb
 F:\EH官网\EAM\obj\Debug\net5.0-windows\EAM.genruntimeconfig.cache
+F:\EH官网\EAM\bin\Debug\net5.0-windows\Newtonsoft.Json.dll

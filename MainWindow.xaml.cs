@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace EAM
 {
@@ -21,7 +23,7 @@ namespace EAM
     /// </summary>
     public partial class MainWindow : Window
     {
-        string RegexStr = string.Empty;
+       // string RegexStr = string.Empty;
         public MainWindow()
         {
             InitializeComponent();

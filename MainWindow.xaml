@@ -3,8 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:EAM"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid/>
+    <Grid>
+        <Button Content="注册" HorizontalAlignment="Left" Height="68" Margin="211,298,0,0" VerticalAlignment="Top" Width="295" Cursor="Hand"/>
+        <TextBox HorizontalAlignment="Left" Height="45" Margin="201,121,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"  materialDesign:HintAssist.Hint="Name" Style="{StaticResource MaterialDesignFilledTextBox}"  Cursor="IBeam"/>
+        <PasswordBox HorizontalAlignment="Left" Height="45" Margin="201,192,0,0" VerticalAlignment="Top" Width="330" Style="{StaticResource MaterialDesignFilledPasswordBox}"  materialDesign:HintAssist.Hint="Password" />
+    </Grid>
 </Window>
