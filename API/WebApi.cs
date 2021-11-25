@@ -11,7 +11,7 @@ namespace EAM.API
 {
     class WebApi
     {
-        public static string GetHttpResponse(string url,string method,string user_agent,string contype)//Send GET
+        public static string GetHttpResponse(string url,string method,string user_agent,string contype,string header,string content)//Send GET
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = method;
@@ -19,8 +19,17 @@ namespace EAM.API
             request.ContentType = contype;
             request.UserAgent = user_agent;
             request.CookieContainer = new CookieContainer();
-            try
+            if (header!="") request.Headers.Add(header);
+            if (content != "")
             {
+                byte[] data = Encoding.UTF8.GetBytes(content);
+                request.ContentLength = data.Length;
+                using (Stream reqStream = request.GetRequestStream())
+                {
+                    reqStream.Write(data, 0, data.Length);
+                    reqStream.Close();
+                }
+            }
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 Stream myResponseStream = response.GetResponseStream();
                 StreamReader myStreamReader = new StreamReader(myResponseStream, Encoding.UTF8);
@@ -28,11 +37,7 @@ namespace EAM.API
                 myStreamReader.Close();
                 myResponseStream.Close();
                 return retString;
-            }
-            catch(Exception ex)
-            {
-                return "Error:" + ex.Message;
-            }
+
         }
         public static string Download_file(string url, string path)//Download File
         {

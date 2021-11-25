@@ -11,4 +11,4 @@ crash.log
 .vs/
 bin/
 Config.cs
-ED.cs
+Stringbase64/

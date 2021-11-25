@@ -8,8 +8,53 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="注册" HorizontalAlignment="Left" Height="68" Margin="211,298,0,0" VerticalAlignment="Top" Width="295" Cursor="Hand"/>
-        <TextBox HorizontalAlignment="Left" Height="45" Margin="201,121,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"  materialDesign:HintAssist.Hint="Name" Style="{StaticResource MaterialDesignFilledTextBox}"  Cursor="IBeam"/>
-        <PasswordBox HorizontalAlignment="Left" Height="45" Margin="201,192,0,0" VerticalAlignment="Top" Width="330" Style="{StaticResource MaterialDesignFilledPasswordBox}"  materialDesign:HintAssist.Hint="Password" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="411*"/>
+            <ColumnDefinition Width="389*"/>
+        </Grid.ColumnDefinitions>
+
+        <TabControl x:Name="AccoutTab" HorizontalAlignment="Left" Height="500" VerticalAlignment="Center" Width="780" Grid.ColumnSpan="2" Margin="10,0,0,0">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5" Margin="-9,0,9,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="16*"/>
+                        <ColumnDefinition Width="201*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Login" ToolTip="MaterialDesignFloatingActionMiniLightButton" HorizontalAlignment="Left" Height="58" Margin="532,322,0,0" VerticalAlignment="Top" Width="58" Cursor="Hand" Click="Login_Click" Style="{DynamicResource MaterialDesignFloatingActionMiniButton}" materialDesign:ShadowAssist.ShadowDepth="Depth1" Background="#FF3AB740" Grid.Column="2"  >
+                        <materialDesign:PackIcon Kind="Login" Height="30" Width="33" VerticalAlignment="Center" />
+                    </Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="UserName_reg" HorizontalAlignment="Left" Height="44" Margin="175,227,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"  materialDesign:HintAssist.Hint="Name" Style="{StaticResource MaterialDesignFilledTextBox}"  Cursor="IBeam"/>
+
+
+                    <materialDesign:PackIcon Kind="Account" Margin="129,236,0,0" Height="30" Width="32" />
+
+
+                    <Button HorizontalAlignment="Left" Height="61" Margin="685,322,0,0" VerticalAlignment="Top" Width="61" Cursor="Hand" Click="Button_Click" 
+                Style="{DynamicResource MaterialDesignFloatingActionMiniButton}" materialDesign:ShadowAssist.ShadowDepth="Depth1" Background="#FF3AB740" >
+                        <materialDesign:PackIcon Kind="AccountPlus" Height="30" Width="33" VerticalAlignment="Center" />
+                    </Button>
+                    <PasswordBox x:Name="Vcode_reg" HorizontalAlignment="Left" Height="46" Margin="175,364,0,0" VerticalAlignment="Top" Width="330" Style="{StaticResource MaterialDesignFilledPasswordBox}"  materialDesign:HintAssist.Hint="Verification code" Cursor="IBeam" />
+                    <materialDesign:PackIcon Kind="Code" Margin="129,380,0,0" Height="30" Width="33" />
+                    <Button x:Name="GetVCode" HorizontalAlignment="Left" Height="38" Margin="457,368,0,0" VerticalAlignment="Top" Width="56" Style="{StaticResource MaterialDesignFlatButton}" Click="GetVCode_Click">
+                        <materialDesign:PackIcon Kind="Target" Height="30" Width="33" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="To_Reg" HorizontalAlignment="Left" Height="46" Margin="32,40,0,0" VerticalAlignment="Top" Width="115" Style="{StaticResource MaterialDesignFlatButton}" Click="To_Reg_Click">
+            <materialDesign:PackIcon Kind="AccountPlus" Height="30" Width="33" />
+        </Button>
+        <Button x:Name="To_Login" HorizontalAlignment="Left" Height="46" Margin="249,40,0,0" VerticalAlignment="Top" Width="115" Style="{StaticResource MaterialDesignFlatButton}" Click="To_Login_Click" Grid.Column="1">
+            <materialDesign:PackIcon Kind="Login" Height="30" Width="33" />
+        </Button>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Height="44" Margin="189,137,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"  materialDesign:HintAssist.Hint="E-mail" Style="{StaticResource MaterialDesignFilledTextBox}"  Cursor="IBeam" Grid.ColumnSpan="2"/>
+        <materialDesign:PackIcon Kind="Email" Margin="141,144,0,0" Height="30" Width="33" />
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="46" Margin="189,276,0,0" VerticalAlignment="Top" Width="330" Style="{StaticResource MaterialDesignFilledPasswordBox}"  materialDesign:HintAssist.Hint="Password" Cursor="IBeam" Grid.ColumnSpan="2" />
+        <materialDesign:PackIcon Kind="Lock" Margin="141,284,0,0" Height="30" Width="33" />
     </Grid>
 </Window>

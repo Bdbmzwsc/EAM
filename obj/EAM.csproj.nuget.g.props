@@ -17,7 +17,19 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.data.desktop\21.1.5\build\netcoreapp3.0\DevExpress.Data.Desktop.props" Condition="Exists('D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.data.desktop\21.1.5\build\netcoreapp3.0\DevExpress.Data.Desktop.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMaterialDesignThemes Condition=" '$(PkgMaterialDesignThemes)' == '' ">C:\Users\Administrator\.nuget\packages\materialdesignthemes\4.3.0-ci82</PkgMaterialDesignThemes>
+    <PkgDevExpress_Wpf_Core Condition=" '$(PkgDevExpress_Wpf_Core)' == '' ">D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.wpf.core\21.1.5</PkgDevExpress_Wpf_Core>
+    <PkgDevExpress_Wpf_Ribbon Condition=" '$(PkgDevExpress_Wpf_Ribbon)' == '' ">D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.wpf.ribbon\21.1.5</PkgDevExpress_Wpf_Ribbon>
+    <PkgDevExpress_Wpf_PropertyGrid Condition=" '$(PkgDevExpress_Wpf_PropertyGrid)' == '' ">D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.wpf.propertygrid\21.1.5</PkgDevExpress_Wpf_PropertyGrid>
+    <PkgDevExpress_Wpf_LayoutControl Condition=" '$(PkgDevExpress_Wpf_LayoutControl)' == '' ">D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.wpf.layoutcontrol\21.1.5</PkgDevExpress_Wpf_LayoutControl>
+    <PkgDevExpress_Wpf_Grid_Core Condition=" '$(PkgDevExpress_Wpf_Grid_Core)' == '' ">D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.wpf.grid.core\21.1.5</PkgDevExpress_Wpf_Grid_Core>
+    <PkgDevExpress_Wpf_DocumentViewer_Core Condition=" '$(PkgDevExpress_Wpf_DocumentViewer_Core)' == '' ">D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.wpf.documentviewer.core\21.1.5</PkgDevExpress_Wpf_DocumentViewer_Core>
+    <PkgDevExpress_Wpf_Docking Condition=" '$(PkgDevExpress_Wpf_Docking)' == '' ">D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.wpf.docking\21.1.5</PkgDevExpress_Wpf_Docking>
+    <PkgDevExpress_Wpf_Printing Condition=" '$(PkgDevExpress_Wpf_Printing)' == '' ">D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.wpf.printing\21.1.5</PkgDevExpress_Wpf_Printing>
+    <PkgDevExpress_Wpf_Charts Condition=" '$(PkgDevExpress_Wpf_Charts)' == '' ">D:\SJA分析器\SjA库\Components\Offline Packages\devexpress.wpf.charts\21.1.5</PkgDevExpress_Wpf_Charts>
   </PropertyGroup>
 </Project>
